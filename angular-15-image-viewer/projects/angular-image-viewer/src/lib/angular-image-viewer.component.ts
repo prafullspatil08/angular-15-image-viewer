@@ -19,13 +19,13 @@ const DEFAULT_CONFIG: ImageViewerConfig = {
     prev: true,
   },
   btnIcons: {
-    zoomIn: "fa fa-plus",
-    zoomOut: "fa fa-minus",
-    rotateClockwise: "fa fa-repeat",
-    rotateCounterClockwise: "fa fa-undo",
-    next: "fa fa-arrow-right",
-    prev: "fa fa-arrow-left",
-    fullscreen: "fa fa-arrows-alt",
+    zoomIn: "fa-solid fa-plus",
+    zoomOut: "fa-solid fa-minus",
+    rotateClockwise: "fa-solid fa-arrow-rotate-right",
+    rotateCounterClockwise: "fa-solid fa-arrow-rotate-left",
+    next: "fa-solid fa-arrow-right",
+    prev: "fa-solid fa-arrow-left",
+    fullscreen: "fa-solid fa-up-right-and-down-left-from-center",
   },
 };
 @Component({
