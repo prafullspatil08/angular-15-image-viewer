@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AngularImageViewerModule } from 'angular-image-viewer';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,10 @@ import { AngularImageViewerModule } from 'angular-image-viewer';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,AngularImageViewerModule
+    AppRoutingModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    AngularImageViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
