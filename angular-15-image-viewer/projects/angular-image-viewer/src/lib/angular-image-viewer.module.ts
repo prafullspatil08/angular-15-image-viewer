@@ -1,18 +1,11 @@
 import { NgModule } from '@angular/core';
 import { AngularImageViewerComponent } from './angular-image-viewer.component';
 import { FullScreenDirective } from './directive/full-screen.directive';
-
-
+import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [
-    AngularImageViewerComponent,
-    FullScreenDirective
-  ],
-  imports: [
-  ],
-  exports: [
-    AngularImageViewerComponent
-  ]
+  declarations: [AngularImageViewerComponent, FullScreenDirective],
+  imports: [CommonModule],
+  exports: [AngularImageViewerComponent, FullScreenDirective],
 })
-export class AngularImageViewerModule { }
+export class AngularImageViewerModule {}
