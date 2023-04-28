@@ -101,7 +101,7 @@
         }
       }
     },
-    "angular-image-viewer": {
+    "angular-15x-image-viewer": {
       "projectType": "library",
       "root": "projects/angular-image-viewer",
       "sourceRoot": "projects/angular-image-viewer/src",

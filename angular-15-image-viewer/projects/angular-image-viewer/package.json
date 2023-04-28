@@ -1,5 +1,5 @@
 {
-  "name": "angular-image-viewer",
+  "name": "angular-15x-image-viewer",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^15.2.0",
