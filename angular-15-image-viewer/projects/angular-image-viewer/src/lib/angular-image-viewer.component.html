@@ -54,15 +54,6 @@
 
       <button
         type="button"
-        [class]="config?.btnClass"
-        *ngFor="let cBtn of config?.customBtns"
-        (click)="fireCustomEvent(cBtn.name, index)"
-      >
-        <span [class]="cBtn?.icon"></span>
-      </button>
-
-      <button
-        type="button"
         id="ngx-fs-btn"
         [class]="config?.btnClass"
         (click)="toggleFullscreen()"
@@ -70,6 +61,15 @@
       >
         <span [class]="config?.btnIcons?.fullscreen"></span>
       </button>
+
+      <button
+      type="button"
+      [class]="config?.btnClass"
+      *ngFor="let cBtn of config?.customBtns"
+      (click)="fireCustomEvent(cBtn.name, index)"
+    >
+      <span [class]="cBtn?.icon"></span>
+    </button>
     </div>
     <!-- <div class="nav-button-container" *ngIf="src.length > 1">
       <button
