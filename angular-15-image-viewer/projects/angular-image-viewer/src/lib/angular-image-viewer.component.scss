@@ -98,6 +98,26 @@
     -o-animation: rotation 2s linear infinite; /* Opera 12+ */
     animation: rotation 2s linear infinite; /* IE 10+, Fx 29+ */
   }
+  .custom-dropdown {
+    opacity: 0.8;
+    min-width: 148px !important;
+    // .dropdown-item:active{
+    //   color: #0000 !important
+    // }
+    li {
+      line-height: 35px;
+      height: 35px;
+      font-size: 14px;
+      padding: 0 16px;
+      text-align: left;
+      &:hover {
+        background: rgba(0, 0, 0, 0.04);
+      }
+      i {
+        margin-right: 16px;
+      }
+    }
+  }
   
   @keyframes rotation {
     from {

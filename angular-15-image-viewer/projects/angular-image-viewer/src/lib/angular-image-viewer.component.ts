@@ -26,6 +26,7 @@ const DEFAULT_CONFIG: ImageViewerConfig = {
     next: "fa-solid fa-arrow-right",
     prev: "fa-solid fa-arrow-left",
     fullscreen: "fa-solid fa-up-right-and-down-left-from-center",
+    menu: 'fa-solid fa-ellipsis-vertical'
   },
 };
 @Component({
@@ -54,6 +55,15 @@ export class AngularImageViewerComponent implements OnInit, OnChanges {
 
   @Output()
   customImageEvent: EventEmitter<CustomImageEvent> = new EventEmitter();
+  
+  @Output()
+  delete: EventEmitter<any> = new EventEmitter();
+
+  @Output()
+  view: EventEmitter<any> = new EventEmitter();
+
+  @Output()
+  replace: EventEmitter<any> = new EventEmitter();
 
   styleHeight = "98vh";
 
@@ -215,6 +225,18 @@ export class AngularImageViewerComponent implements OnInit, OnChanges {
   @HostListener("mouseleave")
   onMouseLeave() {
     this.hovered = false;
+  }
+
+  viewFile(){
+    this.view.emit(true);
+  }
+
+  deleteFile(){
+    this.delete.emit(true);
+  }
+
+  replaceFile(){
+    this.replace.emit(true);
   }
 
   private canNavigate(event: any) {

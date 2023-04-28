@@ -13,6 +13,7 @@ export interface ImageViewerConfig {
       rotateCounterClockwise?: boolean;
       next?: boolean;
       prev?: boolean;
+      menu?:boolean;
     };
   
     btnIcons?: {
@@ -23,6 +24,7 @@ export interface ImageViewerConfig {
       next?: string;
       prev?: string;
       fullscreen?: string;
+      menu: string
     };
   
     customBtns?: Array<{
