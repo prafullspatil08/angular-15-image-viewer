@@ -130,7 +130,10 @@ export class AngularImageViewerComponent implements OnInit, OnChanges {
     if (this.config.wheelZoom) {
       evt.deltaY > 0 ? this.zoomOut() : this.zoomIn();
       return false;
+    }else{
+      return true;
     }
+    
   }
 
   rotateClockwise() {

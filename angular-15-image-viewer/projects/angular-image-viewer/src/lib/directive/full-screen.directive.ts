@@ -1,7 +1,7 @@
 import { Directive, ElementRef, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Directive({
-  selector: '[appFullScreen]'
+  selector: '[appScreenfull]'
 })
 export class FullScreenDirective implements OnChanges {
   @Input("appScreenfull") fullscreenState!: boolean;
@@ -19,7 +19,8 @@ export class FullScreenDirective implements OnChanges {
 
         if (requestMethod) {
           // Native full screen.
-          requestMethod.call(element);
+          return requestMethod.call(element);
+          
         } else {
           return null;
         }
@@ -34,7 +35,8 @@ export class FullScreenDirective implements OnChanges {
 
         if (requestMethod) {
           // Native Cancel full screen.
-          requestMethod.call(element);
+          return requestMethod.call(element);
+          
         } else {
           return null;
         }
